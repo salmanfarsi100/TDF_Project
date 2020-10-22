@@ -1,0 +1,29 @@
+<html>
+  <body>
+    <h1>Radar Table</h1>
+    <form method="POST" action="/speed_records/">
+      <input type="submit" name="submit_button" value="Home">
+      <input type="submit" name="submit_button" value="Delete Records">
+    </form>
+    <table border='1'>
+    	<thead>
+    		<tr>
+				<th>ID</th>
+    			<th>Speed</th>
+    			<th>Vehicle Range</th>
+    			<th>Date-Time</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    			{% for radar_value in radar_values %}
+    				<tr>
+						<td>{{ radar_value.id }}</td>
+    					<td>{{ radar_value.speed }}</td>
+    					<td>{{ radar_value.vehiclerange }}</td>
+    					<td>{{ radar_value.datetime }}</td>
+    				</tr>
+    			{% endfor %}
+    	</tbody>
+    </table>
+  </body>
+</html>

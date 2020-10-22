@@ -1,0 +1,33 @@
+<html>
+  <body>
+    <h1>OFE Table</h1>
+    <form method="POST" action="/deepstream_records/">
+      <input type="submit" name="submit_button" value="Home">
+      <input type="submit" name="submit_button" value="Delete Records">
+    </form>
+    <table border='1'>
+    	<thead>
+    		<tr>
+				<th>ID</th>
+    			<th>Tracking ID</th>
+    			<th>Frame Number</th>
+    			<th>Lane</th>
+    			<th>Date-Time</th>
+    			<th>Image Path</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    			{% for optimal_frame in optimal_frames %}
+    				<tr>
+						<td>{{ optimal_frame.id }}</td>
+    					<td>{{ optimal_frame.tracking_id }}</td>
+    					<td>{{ optimal_frame.frame_number }}</td>
+    					<td>{{ optimal_frame.lane }}</td>
+    					<td>{{ optimal_frame.datetime }}</td>
+    					<td>{{ optimal_frame.image_path }}</td>
+    				</tr>
+    			{% endfor %}
+    	</tbody>
+    </table>
+  </body>
+</html>

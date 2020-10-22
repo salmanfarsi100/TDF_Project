@@ -1,0 +1,29 @@
+<html>
+  <body>
+  	<h1>Vehicle Record Simulator</h1>
+    <form method="POST" action="/deepstream_process/">
+      <label for="tracking_id">Tracking ID</label>
+      <input type="text" name="tracking_id">
+      <br> <br>
+      <label for="frame_number">Frame Number</label>
+      <input type="text" name="frame_number">
+      <br> <br>
+      <label for="lane">Lane</label>
+      <input type="text" name="lane">
+      <br> <br>
+      <label for="datetime">Date-Time</label>
+      <input type="text" name="datetime">
+      <br> <br>
+      <label for="image_path">Image Path</label>
+      <input type="text" name="image_path">
+      <br> <br>
+
+      <input type="submit" name = "submit_button" value="Add Vehicle Record">
+      <input type="submit" name = "submit_button" value="Start Application">
+      <input type="submit" name = "submit_button" value="Stop Application">
+      <input type="submit" name = "submit_button" value="View OFE Records">
+      <input type="submit" name = "submit_button" value="Home">
+    </form>
+
+  </body>
+</html>

@@ -1,0 +1,336 @@
+2020-10-08 10:25:03,273 INFO Sensor Configured Successfully
+2020-10-08 10:26:32,032 INFO Sensor Configured Successfully
+2020-10-08 10:26:32,036 INFO Worker initialized
+2020-10-08 10:26:32,178 INFO Worker Working
+2020-10-08 10:31:01,868 INFO Sensor Configured Successfully
+2020-10-08 10:36:04,725 INFO Sensor Configured Successfully
+2020-10-08 10:39:26,713 INFO Sensor Configured Successfully
+2020-10-08 12:09:05,407 INFO Sensor Configured Successfully
+2020-10-08 12:11:13,561 INFO Sensor Configured Successfully
+2020-10-08 12:11:41,054 INFO Sensor Configured Successfully
+2020-10-08 16:27:23,903 INFO Sensor Configured Successfully
+2020-10-08 16:31:25,485 INFO Sensor Configured Successfully
+2020-10-08 16:32:31,148 INFO Sensor Configured Successfully
+2020-10-08 16:33:39,485 INFO Sensor Configured Successfully
+2020-10-08 16:34:41,860 INFO Sensor Configured Successfully
+2020-10-08 16:37:17,970 INFO Sensor Configured Successfully
+2020-10-08 16:38:31,615 INFO Sensor Configured Successfully
+2020-10-08 16:39:45,343 INFO Sensor Configured Successfully
+2020-10-08 16:40:41,341 INFO Sensor Configured Successfully
+2020-10-13 15:03:25,664 INFO Sensor Configured Successfully
+2020-10-14 10:56:05,924 ERROR Serial Exception in sensor config
+Traceback (most recent call last):
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 265, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/nvidia/deepstream/deepstream-5.0/sources/deepstream_python_apps/apps/tdfflask/tdfmotorway/processes/radar/SpeedMonitorV1_1.py", line 137, in config_sensor
+    self.serial_port = serial.Serial(self.port, baudrate=int(self.baud_rate))
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 268, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+2020-10-14 10:57:04,116 ERROR Serial Exception in sensor config
+Traceback (most recent call last):
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 265, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/nvidia/deepstream/deepstream-5.0/sources/deepstream_python_apps/apps/tdfflask/tdfmotorway/processes/radar/SpeedMonitorV1_1.py", line 137, in config_sensor
+    self.serial_port = serial.Serial(self.port, baudrate=int(self.baud_rate))
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 268, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+2020-10-14 10:59:07,496 ERROR Serial Exception in sensor config
+Traceback (most recent call last):
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 265, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/nvidia/deepstream/deepstream-5.0/sources/deepstream_python_apps/apps/tdfflask/tdfmotorway/processes/radar/SpeedMonitorV1_1.py", line 137, in config_sensor
+    self.serial_port = serial.Serial(self.port, baudrate=int(self.baud_rate))
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 268, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+2020-10-14 11:00:40,455 ERROR Serial Exception in sensor config
+Traceback (most recent call last):
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 265, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/nvidia/deepstream/deepstream-5.0/sources/deepstream_python_apps/apps/tdfflask/tdfmotorway/processes/radar/SpeedMonitorV1_1.py", line 137, in config_sensor
+    self.serial_port = serial.Serial(self.port, baudrate=int(self.baud_rate))
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 268, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+2020-10-14 11:02:06,371 ERROR Serial Exception in sensor config
+Traceback (most recent call last):
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 265, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/nvidia/deepstream/deepstream-5.0/sources/deepstream_python_apps/apps/tdfflask/tdfmotorway/processes/radar/SpeedMonitorV1_1.py", line 137, in config_sensor
+    self.serial_port = serial.Serial(self.port, baudrate=int(self.baud_rate))
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 268, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+2020-10-14 11:03:42,417 ERROR Serial Exception in sensor config
+Traceback (most recent call last):
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 265, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/nvidia/deepstream/deepstream-5.0/sources/deepstream_python_apps/apps/tdfflask/tdfmotorway/processes/radar/SpeedMonitorV1_1.py", line 137, in config_sensor
+    self.serial_port = serial.Serial(self.port, baudrate=int(self.baud_rate))
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 268, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+2020-10-14 11:04:01,651 ERROR Serial Exception in sensor config
+Traceback (most recent call last):
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 265, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/nvidia/deepstream/deepstream-5.0/sources/deepstream_python_apps/apps/tdfflask/tdfmotorway/processes/radar/SpeedMonitorV1_1.py", line 137, in config_sensor
+    self.serial_port = serial.Serial(self.port, baudrate=int(self.baud_rate))
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 268, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+2020-10-14 11:04:36,737 ERROR Serial Exception in sensor config
+Traceback (most recent call last):
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 265, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/nvidia/deepstream/deepstream-5.0/sources/deepstream_python_apps/apps/tdfflask/tdfmotorway/processes/radar/SpeedMonitorV1_1.py", line 137, in config_sensor
+    self.serial_port = serial.Serial(self.port, baudrate=int(self.baud_rate))
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 268, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+2020-10-14 11:05:15,917 ERROR Serial Exception in sensor config
+Traceback (most recent call last):
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 265, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/nvidia/deepstream/deepstream-5.0/sources/deepstream_python_apps/apps/tdfflask/tdfmotorway/processes/radar/SpeedMonitorV1_1.py", line 137, in config_sensor
+    self.serial_port = serial.Serial(self.port, baudrate=int(self.baud_rate))
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 268, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+2020-10-14 11:07:20,104 ERROR Serial Exception in sensor config
+Traceback (most recent call last):
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 265, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/nvidia/deepstream/deepstream-5.0/sources/deepstream_python_apps/apps/tdfflask/tdfmotorway/processes/radar/SpeedMonitorV1_1.py", line 137, in config_sensor
+    self.serial_port = serial.Serial(self.port, baudrate=int(self.baud_rate))
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 268, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+2020-10-14 11:11:34,041 ERROR Serial Exception in sensor config
+Traceback (most recent call last):
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 265, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/nvidia/deepstream/deepstream-5.0/sources/deepstream_python_apps/apps/tdfflask/tdfmotorway/processes/radar/SpeedMonitorV1_1.py", line 137, in config_sensor
+    self.serial_port = serial.Serial(self.port, baudrate=int(self.baud_rate))
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 268, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+2020-10-14 11:24:22,777 ERROR Serial Exception in sensor config
+Traceback (most recent call last):
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 265, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/nvidia/deepstream/deepstream-5.0/sources/deepstream_python_apps/apps/tdfflask/tdfmotorway/processes/radar/SpeedMonitorV1_1.py", line 137, in config_sensor
+    self.serial_port = serial.Serial(self.port, baudrate=int(self.baud_rate))
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 268, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+2020-10-14 11:29:42,111 ERROR Serial Exception in sensor config
+Traceback (most recent call last):
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 265, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/nvidia/deepstream/deepstream-5.0/sources/deepstream_python_apps/apps/tdfflask/tdfmotorway/processes/radar/SpeedMonitorV1_1.py", line 137, in config_sensor
+    self.serial_port = serial.Serial(self.port, baudrate=int(self.baud_rate))
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 268, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+2020-10-14 12:37:30,293 ERROR Serial Exception in sensor config
+Traceback (most recent call last):
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 265, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/nvidia/deepstream/deepstream-5.0/sources/deepstream_python_apps/apps/tdfflask/tdfmotorway/processes/radar/SpeedMonitorV1_1.py", line 137, in config_sensor
+    self.serial_port = serial.Serial(self.port, baudrate=int(self.baud_rate))
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 268, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+2020-10-14 12:39:25,364 ERROR Serial Exception in sensor config
+Traceback (most recent call last):
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 265, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/nvidia/deepstream/deepstream-5.0/sources/deepstream_python_apps/apps/tdfflask/tdfmotorway/processes/radar/SpeedMonitorV1_1.py", line 137, in config_sensor
+    self.serial_port = serial.Serial(self.port, baudrate=int(self.baud_rate))
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 268, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+2020-10-14 12:40:27,578 ERROR Serial Exception in sensor config
+Traceback (most recent call last):
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 265, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/nvidia/deepstream/deepstream-5.0/sources/deepstream_python_apps/apps/tdfflask/tdfmotorway/processes/radar/SpeedMonitorV1_1.py", line 137, in config_sensor
+    self.serial_port = serial.Serial(self.port, baudrate=int(self.baud_rate))
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 268, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+2020-10-14 12:52:00,502 ERROR Serial Exception in sensor config
+Traceback (most recent call last):
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 265, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/nvidia/deepstream/deepstream-5.0/sources/deepstream_python_apps/apps/tdfflask/tdfmotorway/processes/radar/SpeedMonitorV1_1.py", line 137, in config_sensor
+    self.serial_port = serial.Serial(self.port, baudrate=int(self.baud_rate))
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 268, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+2020-10-14 12:56:48,268 ERROR Serial Exception in sensor config
+Traceback (most recent call last):
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 265, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/nvidia/deepstream/deepstream-5.0/sources/deepstream_python_apps/apps/tdfflask/tdfmotorway/processes/radar/SpeedMonitorV1_1.py", line 137, in config_sensor
+    self.serial_port = serial.Serial(self.port, baudrate=int(self.baud_rate))
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/home/jetsonuser/.local/lib/python3.6/site-packages/serial/serialposix.py", line 268, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+2020-10-14 12:58:24,301 INFO Sensor Configured Successfully
+2020-10-14 12:59:56,847 INFO Sensor Configured Successfully
+2020-10-14 13:01:58,132 INFO Sensor Configured Successfully
+2020-10-14 13:03:16,304 INFO Sensor Configured Successfully
+2020-10-14 13:03:51,760 INFO Sensor Configured Successfully
+2020-10-14 13:05:21,116 INFO Sensor Configured Successfully
+2020-10-14 13:06:43,844 INFO Sensor Configured Successfully
+2020-10-14 13:07:59,914 INFO Sensor Configured Successfully
+2020-10-14 13:11:15,256 INFO Sensor Configured Successfully
+2020-10-14 13:12:31,054 INFO Sensor Configured Successfully
+2020-10-14 15:23:40,180 INFO Sensor Configured Successfully
+2020-10-14 15:26:14,184 INFO Sensor Configured Successfully
+2020-10-14 15:30:04,817 INFO Sensor Configured Successfully
+2020-10-14 15:32:24,865 INFO Sensor Configured Successfully
+2020-10-14 15:34:48,301 INFO Sensor Configured Successfully
+2020-10-14 15:56:38,515 INFO Sensor Configured Successfully
+2020-10-14 16:03:04,785 INFO Sensor Configured Successfully
+2020-10-14 16:05:15,792 INFO Sensor Configured Successfully
+2020-10-14 16:15:04,272 INFO Sensor Configured Successfully
+2020-10-14 16:27:47,046 INFO Sensor Configured Successfully
+2020-10-14 16:29:43,834 INFO Sensor Configured Successfully
+2020-10-14 16:31:47,028 INFO Sensor Configured Successfully
+2020-10-14 16:34:43,310 INFO Sensor Configured Successfully
+2020-10-14 16:35:38,352 INFO Sensor Configured Successfully
+2020-10-21 14:43:13,563 INFO Sensor Configured Successfully
+2020-10-21 15:02:29,871 INFO Sensor Configured Successfully
+2020-10-22 09:19:55,696 INFO Sensor Configured Successfully
+2020-10-22 10:08:31,446 INFO Sensor Configured Successfully
